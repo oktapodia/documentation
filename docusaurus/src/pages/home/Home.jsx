@@ -22,6 +22,17 @@ import content from './_home.content';
 
 const NAVBAR_TRANSLUCENT_UNTIL_SCROLL_Y = 36;
 
+const Icon = ({
+  name,
+  classes = 'ph-fill',
+  color = 'inherit'
+}) => {
+
+  return (
+    <i className={`strapi-icons ${classes} ph-${name}`} style={{color}}></i>
+  );
+}
+
 export default function PageHome() {
   const [isNavbarTranslucent, setIsNavbarTranslucent] = useState(true);
 
@@ -47,7 +58,7 @@ export default function PageHome() {
       title={content.page.title}
       description={content.page.description}
     >
-      {isNavbarTranslucent && (
+      {/* {isNavbarTranslucent && (
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -74,19 +85,20 @@ export default function PageHome() {
             }
           `,
         }}
-      />
+      /> */}
       <main className={clsx('font-poppins', styles.home)}>
-        <Hero id="homeHero">
+        <Hero id="homeHero" style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh"
+          }}>
           <Container>
-            <HeroTitle>
-              {content.page.title}
-            </HeroTitle>
-            <HeroDescription>
-              {content.page.description}
-            </HeroDescription>
+            <Icon name="chef-hat" /><span>We're cooking something totally new on docs-next.</span>
+            <div>Please come back in a few weeks and visit the stable docs at <a href="docs.strapi.io">docs.strapi.io</a> in the meantime.</div>
           </Container>
         </Hero>
-        <section
+        {/* <section
           id="homeCarousel"
           className={styles.home__carousel}
         >
@@ -122,8 +134,8 @@ export default function PageHome() {
               ))}
             </Carousel>
           </Container>
-        </section>
-        <section
+        </section> */}
+        {/* <section
           id="homeCategories"
           className={styles.home__categories}
         >
@@ -162,8 +174,8 @@ export default function PageHome() {
               })}
             </div>
           </Container>
-        </section>
-        <section
+        </section> */}
+        {/* <section
           id="homeHelpUsImproveTheDocumentation"
           className={styles.home__huitd}
         >
@@ -176,7 +188,7 @@ export default function PageHome() {
               {content.huitd.label}
             </LinkWithArrow>
           </Container>
-        </section>
+        </section> */}
       </main>
     </Layout>
   );

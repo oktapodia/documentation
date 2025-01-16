@@ -5,6 +5,7 @@
  */
 
 [class*="announcementBar"] {
+  display: none;
   min-height: 44px;
   color: var(--strapi-neutral-800);
 
