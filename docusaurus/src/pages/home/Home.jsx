@@ -95,7 +95,7 @@ export default function PageHome() {
           }}>
           <Container>
             <Icon name="chef-hat" /><span>We're cooking something totally new on docs-next.</span>
-            <div>Please come back in a few weeks and visit the stable docs at <a href="docs.strapi.io">docs.strapi.io</a> in the meantime.</div>
+            <div>Please come back in a few weeks and visit the stable docs at <a href="https://docs.strapi.io">docs.strapi.io</a> in the meantime.</div>
             <img style={{ 
               display: "block",
               margin: "24px auto" 
