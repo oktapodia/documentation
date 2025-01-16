@@ -96,6 +96,10 @@ export default function PageHome() {
           <Container>
             <Icon name="chef-hat" /><span>We're cooking something totally new on docs-next.</span>
             <div>Please come back in a few weeks and visit the stable docs at <a href="docs.strapi.io">docs.strapi.io</a> in the meantime.</div>
+            <img style={{ 
+              display: "block",
+              margin: "24px auto" 
+              }} width="400px" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmtsdzR6dGVsaHczaTh2ZnlnNTJhamY4b20yamxpa3ZkbWFqbDY4MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/demgpwJ6rs2DS/giphy.gif" />
           </Container>
         </Hero>
         {/* <section
